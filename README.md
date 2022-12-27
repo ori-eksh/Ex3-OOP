@@ -34,8 +34,6 @@ Adds a member to the group and sends it the current update.
 #### unregister(Member member):
 Removes a member from the group and clears its update.
 
-
-
 #### insert(int offset, String obj):
 Inserts a string into the update at a specific position.
 #### append(String obj):
@@ -46,10 +44,6 @@ Removes a substring from the update.
 Reverts the update to a previous state.
 #### sendUpdates(): 
 Sends the current update to all members of the group.
-
-
-
-
 #### getUsb():
 Returns the UndoableStringBuilder object that stores the update.
 #### getObservers():
@@ -58,17 +52,10 @@ Member:
 
 #### update(UndoableStringBuilder usb):
 Receives an update from the group administrator and stores it.
+
 ### Sender:
 
 #### register(Member obj): 
 Adds a member to the group and sends it the current update.
 #### unregister(Member obj):
 Removes a member from the group and clears its update.
-#### insert(int offset, String obj):
-Inserts a string into the update at a specific position.
-#### append(String obj):
-Appends a string to the end of the update.
-#### delete(int start, int end):
-Removes a substring from the update.
-#### undo():
-Reverts the update to a previous state.
